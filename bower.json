@@ -1,0 +1,21 @@
+{
+  "name": "ivanasen.github.io",
+  "homepage": "https://ivanasen.github.io",
+  "authors": [
+    "vankata9907 <vankata9907@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "pure": "^1.0.0"
+  }
+}
