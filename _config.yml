@@ -1,1 +1,14 @@
-theme: jekyll-theme-cayman
+title: Portfolio | Ivan-Asen - Web & Mobile Developer
+email: vankata9907@gmail.com
+description: > # this means to ignore newlines until "baseurl:"
+  Developer portfolio
+url: "https://ivanasen.github.io"
+# Build settings
+markdown: kramdown
+gems:
+  - jekyll-feed
+exclude:
+  - Gemfile
+  - Gemfile.lock
+sass:
+  style: compressed
