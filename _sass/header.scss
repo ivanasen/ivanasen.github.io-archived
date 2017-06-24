@@ -1,0 +1,26 @@
+.navbar-fixed {
+    position: absolute;
+    nav {
+        height: auto;
+
+        img {
+            position: relative;
+            width: 2.5em;
+            margin-top: 5px;
+        }
+
+        li {
+            .menu-btn {
+                padding: 8px;
+            }
+
+            #contact-btn {
+                margin-top: 10px;
+                margin-right: 16px;
+                border-radius: 2em;
+                background: $background-gradient;
+            }
+        }        
+        
+    }
+}
