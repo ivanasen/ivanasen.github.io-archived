@@ -1,12 +1,10 @@
 .navbar-fixed {
     position: absolute;
     nav {
-        height: auto;
+        height: auto;        
 
         img {
-            position: relative;
             width: 2.5em;
-            margin-top: 5px;
         }
 
         li {
@@ -22,5 +20,9 @@
             }
         }        
         
+    }
+
+    .visible-nav {
+        background-color: rgba(#263238, 1);
     }
 }
