@@ -1,9 +1,20 @@
+$btn-shadow-color: rgba(0, 0, 0, .7);
+
 .parallax-container {
     height: 100vh;
 
     .greet-container {                
         .divider {
             background-color: rgba(255, 255, 255, .2);
+        }
+
+        ul li a {
+            &:hover {
+                opacity: 1;
+            }
+            opacity: .7;
+            transition: opacity 0.5s;
+            -webkit-transition: opacity 0.5s;
         }
     }
 
@@ -18,16 +29,33 @@
         }
         
     }
+
+    .cv {
+        font-size: 2em;
+        line-height: 1;
+        font-weight: bold;
+    }
+}
+
+#about-me {
+    .section {
+        .btn-large {
+            border-radius: 2em;
+        }
+    }
 }
 
 @keyframes float {
 	0% {
         transform: translate(-50%, 0px);		
+        box-shadow: 0px 5px 30px $btn-shadow-color;
 	}
 	50% {
 		transform: translate(-50%, +20px);
+        box-shadow: 0px 0px 0px $btn-shadow-color;
 	}
 	100% {
 		transform: translate(-50%, 0px);
+        box-shadow: 0px 5px 30px $btn-shadow-color;
 	}
 }
