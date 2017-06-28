@@ -9,7 +9,7 @@ $(window).scroll(function () {
 
 $('.btn-scroll-down').click(() => {
     $('html, body').animate({
-        scrollTop: $("#about-me").offset().top
+        scrollTop: $("#about-me ").offset().top
     }, 1000);
 });
 
