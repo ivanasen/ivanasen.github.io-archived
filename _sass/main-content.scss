@@ -26,14 +26,7 @@ $btn-shadow-color: rgba(0, 0, 0, .7);
             left: 50%;
             bottom: 5vh;
             animation: float 5s infinite;
-        }
-        
-    }
-
-    .cv {
-        font-size: 2em;
-        line-height: 1;
-        font-weight: bold;
+        }        
     }
 }
 
@@ -42,6 +35,14 @@ $btn-shadow-color: rgba(0, 0, 0, .7);
         .btn-large {
             border-radius: 2em;
         }
+
+        p {
+            margin-top: 0;
+        }
+    }
+
+    .skill-list {
+        border-radius: 1em;
     }
 }
 
