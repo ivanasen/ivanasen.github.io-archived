@@ -24,7 +24,7 @@
                         </div>
                 </div>
                 <div class="col s2 offset-s5 floating-btn-container">
-                    <a class="btn-floating btn-large waves-effect waves-light blue btn-scroll-down">
+                    <a class="btn-floating btn-large waves-effect waves-light blue btn-scroll-about-me">
                         <i class="material-icons">keyboard_arrow_down</i>
                     </a>
                 </div>
@@ -38,19 +38,19 @@
 
 <section id="about-me">
     <div class="section container">
-        <h2 class="blue-grey-text text-darken-3">About me</h4>
+        <h2 class="blue-text ">About me</h4>
             <div class="row chart-container">
                 <div class="col s12 l8">
                     <!--<div class="divider"></div>-->
                     <p class="flow-text">
-                        My name is Ivan-Asen Chakarov and I'm a mobile and web app developer based in Dupnitsa, Bulgaria. I started programming two
-                        years ago and since one year I have been making mobile applications for Android. I recently started
-                        learning web development focusing on the front-end. In my first attempt at the National Olympiad
-                        of IT (which was this year) i got a grade of 5.75 and my project, a translator app for Android called
-                        "Talk Translator", won 9th place amongst over 100 projects in its category.
+                        <b>My name is Ivan-Asen Chakarov and I'm a mobile and web app developer based in Dupnitsa, Bulgaria.</b><br><br>                        I started programming two years ago and since one year I have been making mobile applications for
+                        Android. I recently started learning web development focusing on the front-end.<br><br> In my first
+                        attempt at the National Olympiad of IT (which was this year) i got a grade of 5.75 and my project,
+                        a translator app for Android called "Talk Translator", won 9th place amongst over 100 projects in
+                        its category.
                     </p>
                 </div>
-                <div class="col s12 l4">                    
+                <div class="col s12 l4">
                     <ul class="skill-list collection with-header">
                         <li class="collection-header">
                             <h4>My skills</h4>
@@ -80,14 +80,30 @@
                 </div>
             </div>
             <div class="center-align">
-                <a target="_blank" href="../assets/Ivan-Asen_Chakarov_CV.pdf" class="transparent btn-large blue-text">Open CV</a>
+                <a target="_blank" href="../assets/Ivan-Asen_Chakarov_CV.pdf" class="white btn-large blue-text">Donwload CV</a>
             </div>
-
     </div>
 </section>
 
 <section id="projects">
     <div class="section container">
-        <h2 class="blue-grey-text text-darken-3">Projects</h4>
+        <h2 class="blue-text">Projects</h4>
+            <div class="row">
+
+                {% for project_hash in site.data.projects %}
+                {% assign project = project_hash[1] %}
+                <div class="col s12 m6">
+                    <a href="{{ project.url }}">
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="{{ project.img_path }}" alt="{{ project.title }}">
+                                <span class="card-title">{{ project.title }}</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                {% endfor %}
+
+            </div>
     </div>
 </section>

@@ -1,13 +1,15 @@
-$btn-shadow-color: rgba(0, 0, 0, .7);
+$transparent_dark_btn: rgba(0, 0, 0, .7);
+$transparent_dark_project: rgba(0, 0, 0, .5);
+body {
+    background-color: #f8f8f8;
+}
 
 .parallax-container {
     height: 100vh;
-
-    .greet-container {                
+    .greet-container {
         .divider {
             background-color: rgba(255, 255, 255, .2);
         }
-
         ul li a {
             &:hover {
                 opacity: 1;
@@ -17,16 +19,14 @@ $btn-shadow-color: rgba(0, 0, 0, .7);
             -webkit-transition: opacity 0.5s;
         }
     }
-
     .floating-btn-container {
-
         .btn-floating {
             background: $background-gradient;
             position: absolute;
             left: 50%;
             bottom: 5vh;
             animation: float 5s infinite;
-        }        
+        }
     }
 }
 
@@ -35,28 +35,66 @@ $btn-shadow-color: rgba(0, 0, 0, .7);
         .btn-large {
             border-radius: 2em;
         }
-
         p {
             margin-top: 0;
         }
     }
-
     .skill-list {
-        border-radius: 1em;
+        border-radius: .5em;
+    }
+}
+
+#projects {
+    .card {
+        .card-image {
+            &:hover {
+                .card-title {
+                    animation: fade-in .4s;
+                    opacity: 1;
+                }
+            }
+
+            .card-title {
+                opacity: 0;
+                width: 100%;
+                background-color: $transparent_dark_project;
+                animation: fade-out .4s;
+                border-radius: 0 0 2px 2px;
+            }
+            
+        }
+    }
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fade-out {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
     }
 }
 
 @keyframes float {
-	0% {
-        transform: translate(-50%, 0px);		
-        box-shadow: 0px 5px 30px $btn-shadow-color;
-	}
-	50% {
-		transform: translate(-50%, +20px);
-        box-shadow: 0px 0px 0px $btn-shadow-color;
-	}
-	100% {
-		transform: translate(-50%, 0px);
-        box-shadow: 0px 5px 30px $btn-shadow-color;
-	}
+    0% {
+        transform: translate(-50%, 0px);
+        box-shadow: 0px 5px 30px $transparent_dark_btn;
+    }
+    50% {
+        transform: translate(-50%, +20px);
+        box-shadow: 0px 0px 0px $transparent_dark_btn;
+    }
+    100% {
+        transform: translate(-50%, 0px);
+        box-shadow: 0px 5px 30px $transparent_dark_btn;
+    }
 }

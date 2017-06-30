@@ -1,27 +1,14 @@
 .navbar-fixed {
     position: absolute;
     nav {
-        height: auto;        
-
-        img {
-            width: 2.5em;
-        }
-
+        height: auto;
+        background-color: rgba(0, 0, 0, .1); // background-color: white;
         li {
-            .menu-btn {
-                padding: 8px;
-            }
-
             #contact-btn {
-                margin-top: 10px;
-                margin-right: 16px;
-                border-radius: 2em;
                 background: $background-gradient;
             }
-        }        
-        
+        }
     }
-
     .visible-nav {
         background-color: rgba(#263238, 1);
     }

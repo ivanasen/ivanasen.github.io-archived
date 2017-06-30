@@ -1,0 +1,15 @@
+title: Talk Translator
+description: >
+  Talk Translator is a translator app for Android. 
+  It supports more than 100 languages via the Yandex.Translate API.
+
+  The app has 3 modes
+
+  1. Conversation mode - The app listens to what one person is speaking 
+  and automatically translates it in the language of the other person.
+  2. Interview mode - An audio file of the conversation is saved
+  after it has ended.
+  3. Keyboard Translation mode - Classic keyboard translation.
+used_techonlogies: [Android (JAVA), Photoshop, Yandex.Translate API]
+status: Sold
+img_path: ../img/talk_translator.png
