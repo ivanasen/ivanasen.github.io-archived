@@ -4,6 +4,10 @@ body {
     background-color: #f8f8f8;
 }
 
+#fiverr-logo {
+    width: 2em;
+}
+
 .parallax-container {
     height: 100vh;
     .greet-container {
@@ -61,7 +65,7 @@ body {
                 animation: fade-out .4s;
                 border-radius: 0 0 2px 2px;
             }
-            
+
         }
     }
 }
