@@ -17,9 +17,9 @@ let animateNavbar = (scroll) => {
         .css("color", `rgb(${navbarButtonColors.red}, ${navbarButtonColors.green}, ${navbarButtonColors.blue})`);
 }
 
-$(document).ready(() => {
+$(document).ready(() => {    
     $(".button-collapse").sideNav();
-    $(".parallax").parallax();
+    $(".parallax").parallax();    
 });
 
 $(window).scroll(() => animateNavbar($(window).scrollTop()));
@@ -35,3 +35,5 @@ $('.btn-scroll-projects').click(() => {
         scrollTop: $("#projects").offset().top
     }, 1000);
 });
+
+$('.parallax-container').height(window.innerHeight + 'px');
