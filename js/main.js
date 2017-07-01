@@ -1,4 +1,4 @@
-const navBackgroundAnimationSpeed = 700;
+const navBackgroundAnimationSpeed = 600;
 const navSecondaryAnimationSpeed = 300;
 
 let animateNavbar = (scroll) => {
