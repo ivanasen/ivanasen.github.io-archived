@@ -2,6 +2,8 @@ title: Talk Translator
 description: >
   Talk Translator is a translator app for Android. 
   It supports more than 100 languages via the Yandex.Translate API.
+  This project was made for the National Olympiad of IT (2017) in Bulgaria
+  and it ranked 9th amongst over 100 projects in its category.
 
   The app has 3 modes
 
@@ -11,5 +13,4 @@ description: >
   after it has ended.
   3. Keyboard Translation mode - Classic keyboard translation.
 used_techonlogies: [Android (JAVA), Photoshop, Yandex.Translate API]
-status: Sold
 img_path: ../img/talk_translator.png

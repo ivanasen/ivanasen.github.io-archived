@@ -2,10 +2,12 @@
     position: absolute;
     nav {
         height: auto;
-        background-color: rgba(0, 0, 0, .1); // background-color: white;
+        background-color: rgba(0, 0, 0, 0);
+        
         li {
             #contact-btn {
                 background: $background-gradient;
+                border-radius: 2em;
             }
         }
     }
