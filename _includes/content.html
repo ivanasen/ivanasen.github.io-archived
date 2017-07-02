@@ -2,29 +2,28 @@
     <div class="parallax-container valign-wrapper">
         <div class="container">
             <div class="row">
-                <div class="col s12 l8 offset-l2 white-text greet-container">
-                    <h3 class="center-align">Hi, I'm Ivan-Asen Chakarov</h1>
-                        <p class="grey-text text-lighten-3 flow-text center-align">A Mobile & Web app developer based in Dupnitsa, Bulgaria. I currently work as a freelancer and I
-                            love working on new and interesting projects. Let's start scrolling and learn more about me and
-                            my work.</p>
+                <div class="col s12 l10 offset-l1 white-text greet-container">
+                    <h1 class="hide-on-small-only center-align">Hi, I'm Ivan-Asen Chakarov</h2>
+                    <h3 class="hide-on-med-and-up center-align">Hi, I'm Ivan-Asen Chakarov</h3>
+                    <p class=" grey-text text-lighten-1 flow-text center-align">A Mobile & Web app developer based in Dupnitsa, Bulgaria.</p>
 
-                        <div class="divider"></div>
-                        <div class="row">
-                            <ul class="col s12">
-                                <li class="col s2 offset-s2 center-align"><a target="_blank" class="white-text" href="https://www.facebook.com/ivan.asen.9907">
+                    <div class="divider col s8 offset-s2"></div>
+                    <div class="row">
+                        <ul class="col s12 m8 offset-m2">
+                            <li class="col s2 offset-s2 center-align"><a target="_blank" class="white-text" href="https://www.facebook.com/ivan.asen.9907">
                                     <i class="fa fa-facebook-square fa-2x"></i>
                                 </a></li>
-                                <li class="col s2 center-align"><a target="_blank" class="white-text" href="https://github.com/ivanasen">
+                            <li class="col s2 center-align"><a target="_blank" class="white-text" href="https://github.com/ivanasen">
                                     <i class="fa fa-github fa-2x"></i>
                                 </a></li>
-                                <li class="col s2 center-align"><a class="white-text" href="mailto:vankata9907@gmail.com">
+                            <li class="col s2 center-align"><a class="white-text" href="mailto:vankata9907@gmail.com">
                                     <i class="fa fa-envelope fa-2x"></i>
                                 </a></li>
-                                <li class="col s2 center-align"><a target="_blank" class="white-text" href="https://www.fiverr.com/ivanchakarov">
+                            <li class="col s2 center-align"><a target="_blank" class="white-text" href="https://www.fiverr.com/ivanchakarov">
                                     <img id="fiverr-logo" src="../img/fiverr_logo.svg" alt="Fiverr">
                                 </a></li>
-                            </ul>
-                        </div>
+                        </ul>
+                    </div>
                 </div>
                 <div class="col s2 offset-s5 floating-btn-container">
                     <a class="btn-floating btn-large waves-effect waves-light blue btn-scroll-about-me">
@@ -44,13 +43,15 @@
         <h2>About <span class="blue-text">me</span></h4>
             <div class="row chart-container">
                 <div class="col s12 l8">
-                    <!--<div class="divider"></div>-->
                     <p class="flow-text">
-                        <b>My name is Ivan-Asen Chakarov and I'm a mobile and web app developer based in Dupnitsa, Bulgaria.</b><br><br>                        I started programming two years ago and since one year I have been making mobile applications for
-                        Android. I recently started learning web development focusing on the front-end.<br><br> In my first
-                        attempt at the National Olympiad of IT (which was this year) i got a grade of 5.75 and my project,
-                        a translator app for Android called "Talk Translator", won 9th place amongst over 100 projects in
-                        its category.
+                        <b>My name is Ivan-Asen Chakarov and I'm a mobile and web app developer based in Dupnitsa, Bulgaria.</b>
+                        <br><br>
+                        I started programming two years ago and since one year I have been making mobile applications for
+                        Android. I recently started learning web development focusing on the front-end.
+                        <br><br> 
+                        In my first attempt at the National Olympiad of IT (which was this year) i got a grade of 5.75
+                        and my project, a translator app for Android called "Talk Translator", won 9th place amongst over
+                        100 projects in its category.
                     </p>
                 </div>
                 <div class="col s12 l4">
@@ -93,8 +94,7 @@
         <h2 class="">Projects</h4>
             <div class="row">
 
-                {% for project_hash in site.data.projects %}
-                {% assign project = project_hash[1] %}
+                {% for project_hash in site.data.projects %} {% assign project = project_hash[1] %}
                 <div class="col s12 m6">
                     <a href="{{ project.url }}">
                         <div class="card">
