@@ -1,5 +1,6 @@
 const navBackgroundAnimationSpeed = 600;
 const navSecondaryAnimationSpeed = 300;
+const scrollOffset = 60;
 
 let animateNavbar = (scroll) => {
     $(".top").css("opacity", 1 - scroll / navBackgroundAnimationSpeed);
@@ -26,13 +27,13 @@ $(window).scroll(() => animateNavbar($(window).scrollTop()));
 
 $('.btn-scroll-about-me').click(() => {
     $('html, body').animate({
-        scrollTop: $("#about-me ").offset().top
+        scrollTop: $("#about-me ").offset().top - scrollOffset
     }, 1000);
 });
 
 $('.btn-scroll-projects').click(() => {
     $('html, body').animate({
-        scrollTop: $("#projects").offset().top
+        scrollTop: $("#projects").offset().top - scrollOffset
     }, 1000);
 });
 
