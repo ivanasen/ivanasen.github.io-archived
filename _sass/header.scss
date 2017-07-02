@@ -3,15 +3,17 @@
     nav {
         height: auto;
         background-color: rgba(0, 0, 0, 0);
-        
+        padding: 8px 0 6px 2px;
         li {
+            &:nth-child(3) {
+                margin-top: -2px;
+            }
             #contact-btn {
                 background: $background-gradient;
-                border-radius: 2em;
+                border-radius: 100px;
+                box-shadow: 0 4px 8px -3px rgba(0, 0, 0, 0.4);
             }
         }
     }
-    .visible-nav {
-        background-color: rgba(#263238, 1);
-    }
+    
 }

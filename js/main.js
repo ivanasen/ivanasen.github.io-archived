@@ -4,7 +4,7 @@ const navSecondaryAnimationSpeed = 300;
 let animateNavbar = (scroll) => {
     $(".top").css("opacity", 1 - scroll / navBackgroundAnimationSpeed);
     $("nav").css("cssText",
-        `box-shadow: 0 2px 2px rgba(0, 0, 0, ${Math.min(.2, scroll / navSecondaryAnimationSpeed )}) !important;
+        `box-shadow: 0 4px 8px -3px rgba(0, 0, 0, ${Math.min(.06, scroll / navSecondaryAnimationSpeed )}) !important;
         background-color: rgba(255, 255, 255, ${(scroll / navSecondaryAnimationSpeed) - 1})`
     );
 
