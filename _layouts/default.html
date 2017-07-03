@@ -5,6 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
 
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#263238">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#263238">
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="#263238">
+
     <title>{{ site.title }}</title>
 
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -16,9 +23,7 @@
 </head>
 
 <body>
-    {% include header.html %} 
-    {% include content.html %} 
-    {% include footer.html %}
+    {% include header.html %} {% include content.html %} {% include footer.html %}
 
     <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script src="../bower_components/materialize/dist/js/materialize.js"></script>
