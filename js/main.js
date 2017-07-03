@@ -1,4 +1,4 @@
-const navBackgroundAnimationSpeed = 600;
+const navBackgroundAnimationSpeed = 500;
 const navSecondaryAnimationSpeed = 300;
 const scrollOffset = 60;
 
