@@ -1,6 +1,6 @@
 const navBackgroundAnimationSpeed = 500;
 const navSecondaryAnimationSpeed = 300;
-const scrollOffset = 60;
+const scrollOffset = window.innerHeight / 15;
 
 let animateNavbar = (scroll) => {
     $(".top").css("opacity", 1 - scroll / navBackgroundAnimationSpeed);
