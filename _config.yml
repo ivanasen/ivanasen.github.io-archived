@@ -1,15 +1,24 @@
+---
 title: Portfolio | Ivan-Asen - Web & Mobile Developer
+timezone: UTC
+collections:
+  posts:
+    title: Posts
+    output: true
+  uploads:
+    title: Uploads
+    output: true
 email: vankata9907@gmail.com
-description: > # this means to ignore newlines until "baseurl:"
-  Developer portfolio
-url: "https://ivanasen.github.io"
-# Build settings
+description: 'Developer portfolio
+
+'
+url: https://ivanasen.github.io
 markdown: kramdown
 gems:
-  - jekyll-feed
-  - jekyll-minifier
+- jekyll-feed
+- jekyll-minifier
 exclude:
-  - Gemfile
-  - Gemfile.lock
+- Gemfile
+- Gemfile.lock
 sass:
   style: compressed
